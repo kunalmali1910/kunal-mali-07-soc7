@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+class Rectangle
+{
+private:
+    float length, breadth;
+
+public:
+    // Function to accept length and breadth
+    void input()
+    {
+        cout << "Enter length: ";
+        cin >> length;
+
+        cout << "Enter breadth: ";
+        cin >> breadth;
+    }
+
+    // Function to calculate and display area
+    void area()
+    {
+        cout << "Area of Rectangle = " << length * breadth << endl;
+    }
+
+    // Function to calculate and display perimeter
+    void perimeter()
+    {
+        cout << "Perimeter of Rectangle = "
+             << 2 * (length + breadth) << endl;
+    }
+};
+
+int main()
+{
+    Rectangle r;
+
+    r.input();
+    r.area();
+    r.perimeter();
+
+    return 0;
+}
